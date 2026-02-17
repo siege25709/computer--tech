@@ -1,0 +1,13 @@
+CREATE DATABASE app_db;
+USE app_db;
+
+CREATE TABLE users (
+  id INT AUTO_INCREMENT PRIMARY KEY,
+  name VARCHAR(100),
+  email VARCHAR(100)
+);
+CREATE TABLE users (
+  id INTEGER PRIMARY KEY,
+  name TEXT,
+  email TEXT
+);

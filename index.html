@@ -1,0 +1,369 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TechHub | الحاسبات والبرمجة</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="hero">
+      <nav class="nav container">
+        <div class="logo-brand">
+          <i class="fas fa-rocket"></i>
+          <h1>TechHub</h1>
+        </div>
+        <ul>
+          <li><a href="#about">عن الموقع</a></li>
+          <li><a href="#topics">المحتوى</a></li>
+          <div class="nav-auth-container">
+            <li class="nav-login-item" id="nav-login-item">
+              <button class="nav-login-btn" id="loginBtn" aria-label="فتح نافذة تسجيل الدخول"><i class="fas fa-sign-in-alt"></i> دخول</button>
+            </li>
+            <li class="nav-user-item" id="nav-user-item" style="display: none;">
+              <div class="nav-user-profile">
+                <div class="avatar-circle" id="user-avatar-display">أ</div>
+                <span id="user-name-display" class="nav-user-name">المستخدم</span>
+                <div class="dropdown-menu">
+                  <button id="logoutBtn" class="dropdown-item logout-btn">
+                    <i class="fas fa-sign-out-alt"></i> تسجيل الخروج
+                  </button>
+                </div>
+              </div>
+            </li>
+          </div>
+        </ul>
+      </nav>
+      <div class="hero-content container">
+        <div class="hero-text">
+          <h2 class="hero-title">بوابتك لتعلّم <span class="gradient-text">الحاسبات والبرمجة</span></h2>
+          <p class="hero-subtitle">
+            انضم إلى ملايين المتعلمين في رحلة تحولك من مبتدئ إلى محترف في عالم البرمجة والتكنولوجيا
+          </p>
+          <a class="btn btn-primary" href="#login">ابدأ رحلتك الآن <i class="fas fa-arrow-left"></i></a>
+        </div>
+        <div class="hero-visual">
+          <div class="floating-card card-1"></div>
+          <div class="floating-card card-2"></div>
+          <div class="floating-card card-3"></div>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section id="about" class="section container about-section">
+        <div class="section-header">
+          <h3>عن الموقع</h3>
+          <div class="header-line"></div>
+        </div>
+        <div class="about-content">
+          <p>
+            نحن منصة تعليمية عصرية متخصصة في تعليم الحاسبات والبرمجة بأساليب حديثة وفعّالة. نوفر محتوى عالي الجودة يغطي كل ما تحتاج لتصبح محترفاً في مجال التكنولوجيا.
+          </p>
+          <div class="features-grid">
+            <div class="feature-item">
+              <i class="fas fa-book"></i>
+              <h4>محتوى شامل</h4>
+              <p>دروس متكاملة تغطي جميع المستويات</p>
+            </div>
+            <div class="feature-item">
+              <i class="fas fa-graduation-cap"></i>
+              <h4>تعليم متقدم</h4>
+              <p>تعلم من خبراء المجال والمحترفين</p>
+            </div>
+            <div class="feature-item">
+              <i class="fas fa-star"></i>
+              <h4>شهادات معترف بها</h4>
+              <p>احصل على شهادات عند إكمال الدورات</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="topics" class="section container topics-section">
+        <div class="section-header">
+          <h3>المحتوى التعليمي</h3>
+          <div class="header-line"></div>
+        </div>
+        <div class="cards">
+          <article class="card premium-card">
+            <div class="card-icon"><i class="fas fa-microchip"></i></div>
+            <div class="card-badge">محترف</div>
+            <h4>أساسيات الحاسوب</h4>
+            <p>تعرف على مكونات الحاسوب، أنظمة التشغيل، وكيفية عمل الشبكات في العصر الرقمي.</p>
+            <a href="#" class="card-link">استكشف المزيد <i class="fas fa-arrow-left"></i></a>
+          </article>
+          <article class="card premium-card featured">
+            <div class="card-icon"><i class="fas fa-code"></i></div>
+            <div class="card-badge featured-badge">الأفضل</div>
+            <h4>تطوير الويب</h4>
+            <p>دروس عملية احترافية في HTML, CSS, JavaScript مع مشاريع واقعية وأمثلة متقدمة.</p>
+            <a href="#" class="card-link">استكشف المزيد <i class="fas fa-arrow-left"></i></a>
+          </article>
+          <article class="card premium-card">
+            <div class="card-icon"><i class="fas fa-brain"></i></div>
+            <div class="card-badge">متقدم</div>
+            <h4>حل المشكلات البرمجية</h4>
+            <p>تعلم التفكير المنطقي والخوارزميات المتقدمة لكتابة كود احترافي وفعّال.</p>
+            <a href="#" class="card-link">استكشف المزيد <i class="fas fa-arrow-left"></i></a>
+          </article>
+        </div>
+      </section>
+
+      <!-- PROGRAMMING LANGUAGES SECTION -->
+      <section id="languages" class="section container languages-section">
+        <div class="section-header">
+          <h3>استكشف لغات البرمجة</h3>
+          <div class="header-line"></div>
+        </div>
+        <div class="languages-cta-container">
+          <a href="languages.html" class="btn-languages">
+            <div class="btn-content">
+              <i class="fas fa-code"></i>
+              <span>لغات البرمجة</span>
+              <p>اكتشف أشهر لغات البرمجة وأساسياتها</p>
+            </div>
+            <div class="btn-glow"></div>
+            <div class="btn-particles">
+              <span class="particle"></span>
+              <span class="particle"></span>
+              <span class="particle"></span>
+            </div>
+          </a>
+        </div>
+      </section>
+
+      <section id="login" class="section container login-section">
+        <div class="login-container">
+          <div class="login-header">
+            <h3>تسجيل الدخول الآمن</h3>
+            <p>ادخل بيانات حسابك للوصول إلى محتوى حصري</p>
+          </div>
+          <form id="loginForm" novalidate class="modern-form">
+            <div class="form-group">
+              <label for="email">
+                <i class="fas fa-envelope"></i>
+                البريد الإلكتروني
+              </label>
+              <input id="email" name="email" type="email" placeholder="name@example.com" required />
+              <div class="input-indicator"></div>
+            </div>
+
+            <div class="form-group">
+              <label for="password">
+                <i class="fas fa-lock"></i>
+                كلمة المرور
+              </label>
+              <input id="password" name="password" type="password" placeholder="••••••••" minlength="6" required />
+              <div class="input-indicator"></div>
+            </div>
+
+            <button type="submit" class="btn btn-submit">
+              <span>دخول الآن</span>
+              <i class="fas fa-sign-in-alt"></i>
+            </button>
+            <p id="message" aria-live="polite" class="message-box"></p>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <!-- LOGIN MODAL -->
+    <div id="loginModal" class="login-modal">
+      <div class="modal-overlay" id="modalOverlay"></div>
+      <div class="modal-content">
+        <button class="modal-close" id="closeLoginModal" aria-label="إغلاق النافذة">
+          <i class="fas fa-times"></i>
+        </button>
+
+        <!-- TABS NAVIGATION -->
+        <div class="modal-tabs">
+          <button class="tab-btn active" data-tab="login" id="loginTabBtn">
+            <i class="fas fa-sign-in-alt"></i> دخول
+          </button>
+          <button class="tab-btn" data-tab="signup" id="signupTabBtn">
+            <i class="fas fa-user-plus"></i> تسجيل جديد
+          </button>
+        </div>
+
+        <!-- LOGIN TAB CONTENT -->
+        <div class="modal-tab-content active" id="loginTabContent">
+          <div class="modal-header">
+            <div class="modal-icon-container">
+              <i class="fas fa-door-open"></i>
+            </div>
+            <h2>مرحبًا بعودتك</h2>
+            <p>سجل دخولك للوصول إلى حسابك</p>
+          </div>
+
+          <form id="loginForm" novalidate class="modal-form">
+            <div class="form-group">
+              <label for="loginEmailInput">
+                <i class="fas fa-envelope"></i>
+                البريد الإلكتروني
+              </label>
+              <input 
+                id="loginEmailInput" 
+                name="email" 
+                type="email" 
+                placeholder="your@email.com" 
+                required 
+              />
+              <div class="input-indicator"></div>
+              <span class="error-message" id="loginEmailError"></span>
+            </div>
+
+            <div class="form-group">
+              <label for="loginPasswordInput">
+                <i class="fas fa-lock"></i>
+                كلمة المرور
+              </label>
+              <div class="password-wrapper">
+                <input 
+                  id="loginPasswordInput" 
+                  name="password" 
+                  type="password" 
+                  placeholder="••••••••" 
+                  minlength="6" 
+                  required 
+                />
+                <button type="button" class="toggle-password" id="loginTogglePassword">
+                  <i class="fas fa-eye"></i>
+                </button>
+              </div>
+              <div class="input-indicator"></div>
+              <span class="error-message" id="loginPasswordError"></span>
+            </div>
+
+            <div class="form-options">
+              <label class="remember-me">
+                <input type="checkbox" id="rememberMe" name="rememberMe" />
+                <span>تذكرني في هذا الجهاز</span>
+              </label>
+              <a href="#" class="forgot-password">هل نسيت كلمة المرور؟</a>
+            </div>
+
+            <button type="submit" class="btn btn-modal-submit">
+              <span>دخول الآن</span>
+              <i class="fas fa-arrow-left"></i>
+              <div class="btn-shimmer"></div>
+            </button>
+
+            <p id="loginMessage" class="message-box"></p>
+          </form>
+        </div>
+
+        <!-- SIGNUP TAB CONTENT -->
+        <div class="modal-tab-content" id="signupTabContent">
+          <div class="modal-header">
+            <div class="modal-icon-container">
+              <i class="fas fa-user-check"></i>
+            </div>
+            <h2>إنشاء حساب جديد</h2>
+            <p>انضم إلينا واستمتع بجميع المميزات</p>
+          </div>
+
+          <form id="signupForm" novalidate class="modal-form">
+            <div class="form-group">
+              <label for="signupNameInput">
+                <i class="fas fa-user"></i>
+                الاسم الكامل
+              </label>
+              <input 
+                id="signupNameInput" 
+                name="fullname" 
+                type="text" 
+                placeholder="أحمد محمد علي" 
+                required 
+              />
+              <div class="input-indicator"></div>
+              <span class="error-message" id="signupNameError"></span>
+            </div>
+
+            <div class="form-group">
+              <label for="signupEmailInput">
+                <i class="fas fa-envelope"></i>
+                البريد الإلكتروني
+              </label>
+              <input 
+                id="signupEmailInput" 
+                name="email" 
+                type="email" 
+                placeholder="your@email.com" 
+                required 
+              />
+              <div class="input-indicator"></div>
+              <span class="error-message" id="signupEmailError"></span>
+            </div>
+
+            <div class="form-group">
+              <label for="signupPasswordInput">
+                <i class="fas fa-lock"></i>
+                كلمة المرور
+              </label>
+              <div class="password-wrapper">
+                <input 
+                  id="signupPasswordInput" 
+                  name="password" 
+                  type="password" 
+                  placeholder="••••••••" 
+                  minlength="8" 
+                  required 
+                />
+                <button type="button" class="toggle-password" id="signupTogglePassword">
+                  <i class="fas fa-eye"></i>
+                </button>
+              </div>
+              <div class="input-indicator"></div>
+              <span class="error-message" id="signupPasswordError"></span>
+              <small class="password-hint">يجب أن تتضمن الكلمة 8 أحرف على الأقل</small>
+            </div>
+
+            <div class="form-group">
+              <label for="signupConfirmPasswordInput">
+                <i class="fas fa-check-double"></i>
+                تأكيد كلمة المرور
+              </label>
+              <div class="password-wrapper">
+                <input 
+                  id="signupConfirmPasswordInput" 
+                  name="confirmPassword" 
+                  type="password" 
+                  placeholder="••••••••" 
+                  required 
+                />
+                <button type="button" class="toggle-password" id="signupConfirmTogglePassword">
+                  <i class="fas fa-eye"></i>
+                </button>
+              </div>
+              <div class="input-indicator"></div>
+              <span class="error-message" id="signupConfirmError"></span>
+            </div>
+
+            <div class="terms-checkbox">
+              <label>
+                <input type="checkbox" id="termsCheckbox" required />
+                <span>أوافق على <a href="#">شروط الخدمة</a> و<a href="#">سياسة الخصوصية</a></span>
+              </label>
+            </div>
+
+            <button type="submit" class="btn btn-modal-submit">
+              <span>إنشاء الحساب</span>
+              <i class="fas fa-rocket"></i>
+              <div class="btn-shimmer"></div>
+            </button>
+
+            <p id="signupMessage" class="message-box"></p>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <footer class="footer">
+      <p>© 2026 TechHub - جميع الحقوق محفوظة</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
