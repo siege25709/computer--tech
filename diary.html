@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>📔 مفكرة يوميات</title>
+    <link rel="stylesheet" href="diary.css">
+</head>
+<body>
+    <div class="diary-container">
+        <header class="diary-header">
+            <h1>📔 مفكرة يوميات</h1>
+            <p>احفظ أفكارك وذكرياتك اليومية</p>
+        </header>
+
+        <div class="diary-content">
+            <!-- قسم إضافة ملاحظة جديدة -->
+            <div class="add-note-section">
+                <div class="input-group">
+                    <input 
+                        type="text" 
+                        id="noteTitle" 
+                        placeholder="عنوان الملاحظة..."
+                        class="note-input"
+                    >
+                    <textarea 
+                        id="noteContent" 
+                        placeholder="اكتب ملاحظتك هنا..."
+                        class="note-textarea"
+                        rows="5"
+                    ></textarea>
+                </div>
+                <div class="button-group">
+                    <button id="saveBtn" class="btn btn-primary">💾 حفظ الملاحظة</button>
+                    <button id="clearBtn" class="btn btn-secondary">🗑️ مسح</button>
+                </div>
+            </div>
+
+            <!-- قسم البحث والتصفية -->
+            <div class="filter-section">
+                <input 
+                    type="text" 
+                    id="searchInput" 
+                    placeholder="🔍 ابحث عن ملاحظة..."
+                    class="search-input"
+                >
+                <div class="filter-buttons">
+                    <button class="filter-btn active" data-filter="all">الكل</button>
+                    <button class="filter-btn" data-filter="today">اليوم</button>
+                    <button class="filter-btn" data-filter="week">هذا الأسبوع</button>
+                    <button class="filter-btn" data-filter="month">هذا الشهر</button>
+                </div>
+            </div>
+
+            <!-- قسم عرض الملاحظات -->
+            <div class="notes-section">
+                <div id="notesList" class="notes-list">
+                    <p class="empty-message">لا توجد ملاحظات حتى الآن. ابدأ بإضافة ملاحظتك الأولى! 📝</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- نافذة تحرير الملاحظة -->
+        <div id="editModal" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <h2>تحرير الملاحظة</h2>
+                <input type="text" id="editTitle" placeholder="العنوان" class="note-input">
+                <textarea id="editContent" placeholder="المحتوى" class="note-textarea" rows="6"></textarea>
+                <div class="button-group">
+                    <button id="updateBtn" class="btn btn-primary">✅ تحديث</button>
+                    <button id="deleteBtn" class="btn btn-danger">🗑️ حذف</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="diary.js"></script>
+</body>
+</html>
